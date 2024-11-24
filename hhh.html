@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Fitness Tracker</title>
+    <link rel="stylesheet" href="test1.css">
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: aliceblue;
+        }
+
+        header {
+            background: linear-gradient(150deg, rgb(4, 255, 0), black, rgb(0, 0, 0) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .navbar a {
+            padding-left: 5%;
+            padding-right: 5%;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+
+        .logo1 {
+            font-size: 70px;
+            background: linear-gradient(rgb(255, 255, 255), white, rgba(0, 255, 157, 0.792));
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+
+        .quote-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .quote-image {
+            width: 250px; 
+            height: auto;
+            margin: 0 20px;
+            border-radius: 10px;
+        }
+
+        .quote {
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .discription {
+            color: #ffffff;
+            background: linear-gradient(180deg, #006703, #0000004c, black);
+            padding: 25px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            top: 50px;
+        }
+
+        .discription:hover {
+            box-shadow: 0px 8px 20px rgba(1, 255, 255, 1);
+            transition: 0.2s;
+        }
+
+        .muscle-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .muscle-card {
+            flex: 1 1 200px;
+            max-width: 300px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.25s ease;
+        }
+
+        .muscle-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(180deg, #000000, #00700d);
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #f1f1f1;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .footer-content a:hover {
+            color: #00ccff;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="hhh.html" class="q">HOME</a> |
+            <a href="mind.html" class="m">MIND</a> |
+            <a href="tools.html" class="t">TOOLS</a> 
+
+        </div>
+        <div class="logo1">
+            <h1><b><i>GOAL</i></b></h1>
+        </div>
+    </header>
+
+    <main class="quote-container">
+        <img src="show.jpeg" alt="Left Image" class="quote-image">
+        <div class="quote">
+            <i><big>"</big>Winter is tough,<br> but champions rise. Set your goals,<br> push your limits,<br> and grow <br>stronger!"</i>
+        </div>
+        <img src="flex-removebg-preview.png" alt="Right Image" class="quote-image">
+    </main>
+
+    <div class="discription">
+        <i>"Goal" is a dynamic and user-friendly fitness website designed to help individuals track, manage, and achieve their health and fitness objectives.</i>
+    </div>
+
+    <main class="MUSCLE">
+        <p>WHAT WE PROVIDE</p>
+    </main>
+
+    <div class="muscle-container">
+        <a href="musclewiki.html">
+            <div class="muscle-card m-1">
+                <h2>MUSCLE WIKI</h2>
+                <p>Provides tutorials for exercises targeting each muscle group.</p>
+            </div>
+        </a>
+        <a href="mind.html">
+            <div class="muscle-card m-2">
+                <h2>MIND</h2>
+                <p>Offers breathing exercises and mental well-being tips.</p>
+            </div>
+        </a>
+        <a href="tools.html">
+            <div class="muscle-card m-3">
+                <h2>TOOLS</h2>
+                <p>Features calculators to track fitness metrics.</p>
+            </div>
+        </a>
+        <div class="muscle-card m-4">
+            <h2>TIME DRILLS</h2>
+            <p>Coming soon...</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p class="footer-text">&copy; 2024 GOAL fitness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

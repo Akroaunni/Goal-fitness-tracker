@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burned Calculator</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+        }
+
+      
+        header {
+            background: linear-gradient(175deg, rgba(0, 121, 182, 0.47), black, rgb(0, 0, 0) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            padding: 0 5%;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .calorie-calculator {
+            background: linear-gradient(180deg, #003470, #000000);
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0px 8px 20px rgba(1, 200, 255, 0.6);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .calorie-calculator h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            background: linear-gradient(rgb(255, 255, 255), rgb(255, 25, 25), rgb(255, 0, 230));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .calorie-calculator label {
+            font-size: 1.1rem;
+            color: #f1f1f1;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        .calorie-calculator input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #333;
+            color: #f1f1f1;
+        }
+
+        .calorie-calculator button {
+            background-color: #000970;
+            color: #f1f1f1;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .calorie-calculator button:hover {
+            background-color: #00ccff;
+        }
+
+        .calorie-result {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #ffffff;
+        }
+
+
+        footer {
+            background: linear-gradient(180deg, #000000, #001370);
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #f1f1f1;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content a:hover {
+            color: #00ccff;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+        @media (max-width: 480px) {
+            .navbar a {
+                font-size: 1rem;
+            }
+
+            .calorie-calculator {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header {
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="hhh.html" class="q">HOME</a> |
+            <a href="mind.html" class="m">MIND</a> |
+            <a href="tools.html" class="t">TOOLS</a> |
+            
+        </div>
+        <div class="logo1">
+            <h1><i>Calorie Meter</i></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="calorie-calculator">
+            <label for="steps">Steps Taken:</label>
+            <input type="number" id="steps" placeholder="Enter steps taken" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <button onclick="calculateCalories()">Calculate Calories Burned</button>
+
+            <div class="calorie-result" id="calorie-result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p class="footer-text">&copy; 2024 GOAL fitness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateCalories() {
+            const steps = parseFloat(document.getElementById('steps').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+
+            if (steps && weight) {
+                const caloriesBurned = (steps * 0.04 * weight).toFixed(2);
+                document.getElementById('calorie-result').innerHTML = `You burned approximately <b>${caloriesBurned}</b> calories.`;
+            } else {
+                document.getElementById('calorie-result').innerHTML = "Please enter valid steps and weight.";
+            }
+        }
+    </script>
+</body>
+</html>

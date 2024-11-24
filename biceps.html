@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Fitness Tracker</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar {
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .navbar a {
+            padding-left: 5%;
+            padding-right: 5%;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(1750deg, #000000, #000000, rgb(255, 111, 0));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            gap: 20px;
+            color: aliceblue;
+        }
+
+        video {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+            max-width: 50%;
+        }
+
+        .video-title {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .video-description {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #000000, #700000);
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #f1f1f1;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .footer-content a:hover {
+            color: #00ccff;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="hhh.html" class="q">HOME</a> |
+        <a href="mind.html" class="m">MIND</a> |
+        <a href="tools.html" class="t">TOOLS</a> 
+
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Dumbell Hammer Curl</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Start in a kneeling position with your hands planted on the ground.</li>
+                        <li>Pick your knees up off the ground. Hold in this position with a flat back.
+                        </li>
+                        
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="hammer.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Chin up</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Hold the bar with a slightly wider than shoulder width grip. Push the bar up toward the ceiling and maintain that elbow extension.</li>
+                        <li>Flex your abs and sit-up. Aim to get your torso vertical while maintaining the barbell overhead.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="chin.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Bicep curl</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Sit on the floor and flex your knees and hips to a 90 degree angle.</li>
+                        <li>Your feet should be hovering off the ground. (If that's too hard start with heels on the floor)</li>
+                        <li>Rotate your upper spine to engage your obliques.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="curl.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Dumbell curl</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Lay on your back with your arms palms down on either side.</li>
+                        <li>Keep your legs together and as straight as possible.
+                        </li>
+                        <li>Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down.</li>
+                        <!-- <li>Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise</li> -->
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="dumbell.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p class="footer-text">&copy; credits to muscle wiki.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>

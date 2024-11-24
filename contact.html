@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Goal Fitness Tracker</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #f1f1f1;
+            background-color: #000000; 
+            overflow: hidden; 
+        }
+
+        
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        
+        .left-side {
+            width: 50%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-side img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        
+        .right-side {
+            width: 50%;
+            background: linear-gradient(20deg,rgb(148, 150, 0),rgb(14, 86, 0),black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .right-side h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .right-side p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .contact-item {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .contact-item a, .contact-item p {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        
+        <div class="left-side">
+            <img src="flex.jpg" alt="Contact Us Image">
+        </div>
+
+        
+        <div class="right-side">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us through any of the methods below:</p>
+
+            <div class="contact-item">
+                <img src="mail.jpg" alt="Email Icon">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">ashinunni05.official@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <img src="phone.png" alt="Phone Icon">
+                <p>+91 90720058</p>
+            </div>
+            
+            <div class="contact-item">
+                <img src="ins.png" alt="Instagram Icon">
+                <a href="https://www.instagram.com/ashin_unni/">Instagram</a>
+            </div>
+
+            <div class="contact-item">
+                <img src="fb.png" alt="Facebook Icon">
+                <a href="https://www.facebook.com/musclewiki/">Facebook</a>
+            </div>
+
+            <div class="contact-item">
+                <img src="git.png" alt="GitHub Icon">
+                <a href="https://github.com/Akroaunni">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <h3>Quick Links</h3>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    
+
+</body>
+</html>

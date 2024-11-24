@@ -1,0 +1,313 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Goal Fitness Tracker - Mind Wellness</title>     
+    <link rel="stylesheet" href="test1.css">     
+    <style>         
+        
+        body {             
+            background-color: #000;             
+            margin: 0;             
+            padding: 0;             
+            height: 100%;             
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;             
+            color: white;         
+        }          
+
+        
+        header {             
+            background: linear-gradient(150deg, rgb(0, 144, 166), black, rgb(0, 0, 0) 100%);             
+            color: white;             
+            text-align: center;             
+            padding: 20px;             
+            font-size: 2rem;         
+        }          
+
+        .navbar a {             
+            padding-left: 5%;             
+            padding-right: 5%;             
+            text-decoration: none;             
+            color: aliceblue;             
+            font-size: 1.2rem;             
+            margin: 0 20px;             
+            transition: color 0.3s ease;         
+        }          
+
+        .navbar a:hover {             
+            color: #00ffd7;         
+        }          
+
+        .logo1 {             
+            font-size: 70px;             
+            background: linear-gradient(rgb(255, 255, 255), white, rgba(0, 255, 225, 0.792));             
+            -webkit-background-clip: text;             
+            color: transparent;             
+            text-align: center;         
+        }          
+
+             
+        .intro {             
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            text-align: left;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+                 
+        .mind {             
+            flex: 1;
+            text-align: center;
+            margin-right: 20px; 
+        }
+
+        .mind img {             
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+               
+        .intro p {             
+            flex: 2; 
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        
+        .full-width-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(breath.png)
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            opacity: 0.8;
+            transition: transform 0.3s ease;
+        }
+
+        
+        .breathing-link-overlay {
+            position: absolute;
+            color: white;
+            font-size: 1.8rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            font-family: ;
+            
+        }
+
+        .breathing-link-overlay:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgba(0, 244, 211, 0.8);
+        }
+
+        
+        footer {
+        background: linear-gradient(180deg, #000000, #005f70);
+        color: #f1f1f1;
+        padding: 20px 0;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content {
+        max-width: 1200px;
+        margin: auto;
+        }
+
+        .footer-content h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        }
+
+        .footer-content a {
+        display: inline-block;
+        margin: 5px 10px;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-size: 1em;
+        transition: color 0.3s;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content a:hover {
+        color: #00ccff; 
+        }
+
+        .footer-text {
+        margin-top: 15px;
+        font-size: 0.9em;
+        color: #aaaaaa;
+        }
+        
+.full-width-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    height: 400px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    
+    transition: transform 0.3s ease;
+}
+
+.icon-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.icon-btn {
+    background-color: #00ccff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.icon-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 244, 211, 0.8);
+}
+.exp{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    text-align: justify;
+    background-image: url(lmg.jpeg);
+    box-shadow: 0px 0px 100px rgba(128, 38, 255, 0.8);
+    
+}
+
+.mind-fitness-importance {
+    background-color: #111;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0px 0px 20px rgba(0, 144, 166, 0.5);
+    border-radius: 10px;
+}
+
+.mind-fitness-importance h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mind-fitness-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mind-fitness-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 225, 0.5);
+}
+
+.mind-fitness-content p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+    </style> 
+</head> 
+<body>     
+    <header>         
+        <div class="navbar">
+            <a href="hhh.html" class="q">HOME</a> |
+            <a href="mind.html" class="m">MIND</a> |
+            <a href="tools.html" class="t">TOOLS</a> 
+        </div>      
+        <div class="logo1">             
+            <h1><b><i>MiND</i></b></h1>         
+        </div>     
+    </header>             
+    <section class="intro">         
+        <div class="mind"><a href=""> <img src="mind.png" alt=""></a></div>         
+        <p>Welcome to the Mind Wellness section! Here, we focus on the importance of mental well-being as part of a holistic fitness journey. Explore tips, exercises, and resources to help you find peace, reduce stress, and enhance your mental clarity.</p>     
+    </section>      
+    <div class="exp">
+        <p>Why Mental Fitness is Essential for Overall Health
+
+            Mental fitness is just as crucial as physical fitness in maintaining a healthy lifestyle. A strong mind can enhance resilience, sharpen focus, and improve emotional well-being, allowing us to navigate life’s challenges more effectively. Good mental fitness reduces stress, increases happiness, and boosts productivity. It also positively impacts physical health by lowering risks of issues like high blood pressure, heart disease, and sleep disorders, as the mind and body are deeply interconnected. Prioritizing mental fitness not only enhances daily functioning but also contributes to a more balanced, fulfilling life.</p>
+
+    </div>
+    <section class="mind-fitness-importance">
+        <h1>Importance of Mind Fitness</h1>
+        <div class="mind-fitness-content">
+            <img src="minnnd.jpg" alt="Mind fitness" class="mind-fitness-image">
+            <p>
+                Mind fitness plays a vital role in achieving overall well-being, as a healthy mind enhances physical health, resilience, and life satisfaction. When we invest in mind fitness, we develop the capacity to manage stress, handle life’s challenges, and remain focused on goals. Mental fitness improves emotional health, reduces anxiety, and promotes happiness, leading to increased productivity and a sense of fulfillment. Studies show that individuals who practice mind fitness exercises, like meditation, mindfulness, and positive thinking, experience better sleep, reduced risk of heart disease, and lower levels of inflammation.
+            </p>
+            <p>
+                Regularly engaging in mental fitness activities can improve memory, mental clarity, and decision-making abilities. It fosters resilience, empowering individuals to adapt to change and recover from setbacks more quickly. Additionally, mind fitness strengthens social connections by promoting empathy and enhancing communication skills. Overall, by prioritizing mind fitness, we are better equipped to lead a balanced, healthy lifestyle, improving not only our personal lives but also our interactions with others. This holistic approach to health ensures that the mind, body, and soul work harmoniously, fostering a healthier, happier life.
+            </p>
+        </div>
+    </section>
+    
+
+    
+
+    <footer>
+        <footer>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <p class="footer-text">&copy; 2024 GOAL fitness. All rights reserved.</p>
+        </footer>
+    
+</body> 
+</html>

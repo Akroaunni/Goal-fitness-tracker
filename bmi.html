@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="    =device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+         body {
+            background-color: #000000; 
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+        }
+
+
+        header {
+            background: linear-gradient(175deg, rgba(182, 164, 0, 0.47) ,black, rgb(0, 0, 0) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .navbar a {
+            padding-left: 5%;
+            padding-right: 5%;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+            margin-top: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .bmi-calculator {
+            color: #ffbb00;
+            border: 1px;
+            border-style: solid;
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0px 8px 30 px rgba(255, 220, 78, 0.6);
+            margin: 80px auto 20px; 
+        }
+
+        .bmi-calculator h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(200, 255, 0));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .bmi-calculator label {
+            font-size: 1.1rem;
+            color: #f1f1f1;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        .bmi-calculator input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #333;
+            color: #f1f1f1;
+        }
+
+        .bmi-calculator button {
+            background-color: #670070;
+            color: #f1f1f1;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .bmi-calculator button:hover {
+            background-color: #00ccff;
+        }
+
+        .bmi-result {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #ffffff;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #000000, #ffdd009f);
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: auto; 
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #f1f1f1;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content a:hover {
+            color: #00ccff; 
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+        h1{
+            font-size: 70px;
+            background: linear-gradient(rgb(255, 255, 255), white, rgb(255, 196, 0));
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        label
+        {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="hhh.html" class="q">HOME</a> |
+            <a href="mind.html" class="m">MIND</a> |
+            <a href="tools.html" class="t">TOOLS</a> 
+            
+        </div>
+        <div class="logo1">
+            <h1><i>BMI CALCULATOR</i></h1>
+        </div>
+    </header>
+    <div class="bmi-calculator">
+        
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height" required>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <div class="bmi-result" id="bmi-result"></div>
+    </div>
+    <script>
+        function calculateBMI() {
+            let weight = parseFloat(document.getElementById('weight').value);
+            let height = parseFloat(document.getElementById('height').value) / 100;
+    
+         
+            if (weight < 20) {
+                document.getElementById('bmi-result').innerHTML = "Please enter a valid weight. If your weight is below 20 kg, consider seeking help.";
+                return;
+            }
+    
+            if (weight && height) {
+                let bmi = (weight / (height * height)).toFixed(2);
+                let category = "";
+                if (bmi < 18.5) category = "Underweight";
+                else if (bmi < 24.9) category = "Normal weight";
+                else if (bmi < 29.9) category = "Overweight";
+                else category = "Obese";
+                document.getElementById('bmi-result').innerHTML = `Your BMI is <b>${bmi}</b> - ${category}`;
+            } 
+            else 
+            {
+                document.getElementById('bmi-result').innerHTML = "Please enter valid weight and height.";
+            }
+        }
+    </script>
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p class="footer-text">&copy; 2024 GOAL fitness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

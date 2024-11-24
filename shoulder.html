@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Fitness Tracker</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar {
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .navbar a {
+            padding-left: 5%;
+            padding-right: 5%;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(1750deg, #000000, #000000, rgb(255, 111, 0));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            gap: 20px;
+            color: aliceblue;
+        }
+
+        video {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+            max-width: 50%;
+        }
+
+        .video-title {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .video-description {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #000000, #700000);
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #f1f1f1;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .footer-content a:hover {
+            color: #00ccff;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="hhh.html" class="q">HOME</a> |
+        <a href="mind.html" class="m">MIND</a> |
+        <a href="tools.html" class="t">TOOLS</a> 
+     
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Band pull</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Adjust seat height so handles align with chest. Sit and grip handles with elbows slightly bent.</li>
+                        <li>Slowly bring handles together in front, keeping tension. Focus on squeezing chest muscles.</li>
+                        <li>Return handles to starting position with controlled motion. Keep chest up throughout. Repeat for reps.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="band pull.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Cable face pulls</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</li>
+                        <li>Lower the bar to your mid chest</li>
+                        <li>Raise the bar until you've locked your elbows.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="cable face pulls.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Rear delt</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Place your hands firmly on the ground, directly under shoulders.Flatten your back so your entire body is straight and slowly lower your body</li>
+                        <li>Draw shoulder blades back and down, keeping elbows tucked close to your body</li>
+                        <li>Exhale as you push back to the starting position.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="rear delt.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h1 class="video-title">Reverse peckdeck flys</h1>
+                <p class="video-description">
+                    <ul>
+                        <li>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</li>
+                        <li>Lower the dumbbells to your mid chest</li>
+                        <li>Raise the dumbbells until you've locked your elbows.</li>
+                    </ul>
+                </p>
+            </div>
+            <video autoplay muted loop>
+                <source src="reverse fly.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p class="footer-text">&copy; credits to muscle wiki.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>
